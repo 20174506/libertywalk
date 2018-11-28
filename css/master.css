@@ -1,0 +1,70 @@
+body {
+  /* NOTE: FUENTES */
+  @import url ("https://fonts.googleapis.com/css?family=Roboto:300,400");
+
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#contbanner{
+  position: relative;
+  z-index: 9;
+ /*NOTE: IMAGEN DE FONDO*/
+
+  background: url("../img/home/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* NOTE: tamaño del contenedor */
+  height: 100vh;
+}
+
+
+/* NOTE: OVERLAY NEGRO ARRIBA DE LA IMG */
+#blackoverlay{
+  position: absolute;
+  background-color:black;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+
+/* NOTE: PROPIEDADES DEL HEADER */
+header{
+  position: relative;
+  /* NOTE: Z INDEX PA PONERLO ARRIBA DEL OVERLAY */
+  z-index: 11;
+}
+
+
+#logoheader{
+  height:40px;
+}
+
+header nav ul {
+  float: left;
+
+}
+
+header nav ul li {
+  float: left;
+  list-style: none;
+  position:relative;
+}
+
+header nav ul li a {
+  font-family:"Roboto";
+
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li ul {
+display: block;
+position: absolute;
+}
