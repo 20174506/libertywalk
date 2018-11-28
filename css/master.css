@@ -1,9 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 body {
   /* NOTE: FUENTES */
-  @import url ("https://fonts.googleapis.com/css?family=Roboto:300,400");
-
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -39,15 +37,20 @@ header{
   position: relative;
   /* NOTE: Z INDEX PA PONERLO ARRIBA DEL OVERLAY */
   z-index: 11;
+  padding: 35px;
+  max-width: 1250px;
+  margin:auto;
 }
 
 
 #logoheader{
   height:40px;
+  float: left;
 }
 
 header nav ul {
-  float: left;
+  float: right;
+  margin: 0 25px 0 0;
 
 }
 
@@ -58,10 +61,11 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font-family:"Roboto";
-
+  font-weight: 500;
+  font-size: 12pt;
   color: white;
   text-decoration: none;
+  margin: 0 20px;
 }
 
 header nav ul li ul {
