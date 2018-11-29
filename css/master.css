@@ -37,30 +37,35 @@ header{
   position: relative;
   /* NOTE: Z INDEX PA PONERLO ARRIBA DEL OVERLAY */
   z-index: 11;
-  padding: 35px;
-  max-width: 1250px;
+  /*padding: 35px;*/
+  max-width: 1024px;
+  height: 8vh;
   margin:auto;
 }
 
 
 #logoheader{
+  position: absolute;
+  top:50%;
   height:40px;
   float: left;
 }
 
 header nav ul {
-  float: right;
-  margin: 0 25px 0 0;
-
+  position: absolute;
+  top:50%;
+  right:0;
+  list-style: none;
 }
 
 header nav ul li {
   float: left;
-  list-style: none;
   position:relative;
+  height: 40px;
 }
 
 header nav ul li a {
+  display: block;
   font-weight: 500;
   font-size: 12pt;
   color: white;
@@ -71,4 +76,17 @@ header nav ul li a {
 header nav ul li ul {
 display: block;
 position: absolute;
+}
+
+/* NOTE: Texto del princio */
+
+#contbanner h1{
+  position: sticky;
+  top: 48%;
+  text-align: center;
+  color: white;
+  z-index: 13;
+  font-size: 30pt;
+  font-weight: 300;
+
 }
