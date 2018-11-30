@@ -6,17 +6,8 @@ body {
   padding: 0;
 }
 
-/* NOTE: ANCHO Y ALTO DE LA PARTE DE ARRIBA */
-#topart
-{
-  width: 100%;
-  height: 100vh;
-}
-
-
-
 #contbanner{
-  position: absolute;
+  position: relative;
   z-index: 9;
  /*NOTE: IMAGEN DE FONDO*/
 
@@ -27,9 +18,6 @@ body {
 
   /* NOTE: tamaño del contenedor */
   height: 100vh;
-  width: 100%;
-  top: 0;
-
 }
 
 
@@ -38,10 +26,9 @@ body {
   position: absolute;
   background-color:black;
   z-index: 10;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   opacity: 0.8;
-  top:0px;
 }
 
 
@@ -59,7 +46,7 @@ header{
 
 /* NOTE: LOGO HEADER */
 #logoheader{
-  margin-top: 20px;
+  margin-top: 10px;
   height:40px;
   float: left;
 }
@@ -116,10 +103,11 @@ header nav ul li ul li a{
   text-align: center;
 }
 
-/* NOTE: Titulo H1 DEL SITIO */
-h1{
-  position: relative;
-  top: 45%;
+/* NOTE: Texto del princio */
+
+#contbanner h1{
+  position: sticky;
+  top: 48%;
   text-align: center;
   color: white;
   z-index: 13;
