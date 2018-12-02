@@ -83,37 +83,37 @@ header nav ul {
 
 header nav ul li {
   float: left;
-  position:relative;
 }
 
 header nav ul li a {
-  display: block;
+
   font-weight: 500;
   font-size: 12pt;
   color: white;
   text-decoration: none;
-  margin: 0 20px;
+  padding: 15px 20px;
+  position: relative;
 }
 
 /* NOTE: DROPDOWN MENU */
 
-header nav ul li ul {
-position: relative;
-display: block;
-background-color: white;
+.dropdcont {
+display:none;
 position: absolute;
 right: 0;
 padding:0;
+padding-top: 25px;
 }
 
-header nav ul li ul li{
-position: relative;
+.dropdown{
+  /*display: inline-block;*/
 }
-header nav ul li ul li a{
-  color: black;
-  padding:0;
-  margin: auto;
-  text-align: center;
+.dropdcont a{
+
+  color: white;
+  padding:10px 15px;
+  text-align: left;
+  margin:0;
 }
 
 /* NOTE: Titulo H1 DEL SITIO */
@@ -125,5 +125,16 @@ h1{
   z-index: 13;
   font-size: 30pt;
   font-weight: 300;
+}
 
+ul li a:hover, .dropdown:hover{
+    background-color: red;
+}
+
+.dropdown:hover + .dropdcont  {
+  display: grid;
+}
+
+.dropdcont:hover {
+  display: grid;
 }
