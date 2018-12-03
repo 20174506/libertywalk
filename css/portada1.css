@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+body {
+  /* NOTE: FUENTES */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NOTE: ANCHO Y ALTO DE LA PARTE DE ARRIBA a */
+#topart
+{
+  width: 100%;
+  height: 50vh;
+  margin:0;
+  padding:0;
+}
+
+
+#contbanner{
+  position: absolute;
+  z-index: 9;
+ /*NOTE: IMAGEN DE FONDO*/
+
+  background: url("../img/Nosotros/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* NOTE: tamaño del contenedor */
+  height: 50vh;
+  width: 100%;
+  top: 0;
+
+}
+
+
+/* NOTE: OVERLAY NEGRO ARRIBA DE LA IMG */
+#blackoverlay{
+  position: absolute;
+  background-color:black;
+  z-index: 10;
+  width: 100%;
+  height: 50vh;
+  opacity: 0.5;
+  top:0px;
+}
