@@ -230,36 +230,72 @@ CONTENIDO CONTENIDO  */
 
 footer{
   width:100%;
-  height:300px;
+  height:400px;
   background: black
 }
 
 .footercontained{
+  background: black;
   max-width: 1110px;
   margin: auto;
 }
 
 /* NOTE: ENLACES */
 .linkbar {
-  background: green;
+  background: black;
   padding:20px 40px;
 }
 
 .footrcolumna{
   width:48%;
   display: inline-table;
-  mq4tina
+}
+
+.footrcolumna h4{
+  color: white;
 }
 
 .footrfila{
-  height: 60px;
+  height: 40px;
 
 }
 
+.footrfila i {
+  font-size: 20pt;
+  color: white;
+}
+
+.footrfila a {
+  text-decoration: none;
+  color: white;
+  font-size: 10pt;
+  margin: 0 10px;
+}
+
+.mapa{
+  display: inline-flex;
+}
+
+.mapa img {
+  object-position: 50% 50%;
+  object-fit: cover;
+  width: 150px;
+  height:150px;
+  margin:0 0 10px 0px;
+}
+
+.mapa p {
+  color: white;
+  font-size: 10pt;
+  margin:20px;
+
+}
+
+
 /* NOTE: INFO DE COPYRIGHT Y FRSASE */
 .creditbar{
-  background: white;
-  height: 100px;
+  background:black;
+  color: white;
 }
 
 .copyright{
