@@ -196,6 +196,11 @@ CONTENIDO CONTENIDO  */
   padding:10px
 }
 
+#contenido h4{
+  color:white;
+  margin: 0;
+}
+
 #contenido a {
   text-decoration: none;
 }
@@ -236,6 +241,14 @@ CONTENIDO CONTENIDO  */
   width: 400px;
   height:400px;
   margin:0;
+}
+
+.fotoindwide {
+  object-position: 50% 50%;
+  object-fit: cover;
+  width: 100%;
+  height:300px;
+  margin:20px;
 }
 
 .parrafoind{
