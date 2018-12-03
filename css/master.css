@@ -210,7 +210,7 @@ CONTENIDO CONTENIDO  */
 .fila{
     display:inline-table;
     margin: 20px;
-    vertical-align: text-top;
+    vertical-align: middle;
 }
 
 #contenido p {
@@ -241,7 +241,6 @@ CONTENIDO CONTENIDO  */
 .parrafoind{
   float: right;
   max-width:500px;
-  vertical-align: text-top;
 }
 .stripe {
   width: 100%;
