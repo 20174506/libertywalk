@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Liberty Walk</title>
+    <!-- NOTE: HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/distribucion.css">
+    <!-- NOTE: LIBRERIA DE ICONOS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- NOTE: Libreria JQUERY -->
+    <script src="../js/jquery.js"></script>
+    <!-- NOTE: MIS FUNCIONES JQUERY -->
+    <script src="../js/funciones.js"></script>
+  </head>
+
+
+  <body>
+
+
+
+    <!-- NOTE: HEADER CON FONDO Y TITULO -->
+    <div id="topart">
+        <!-- NOTE: INICIO DEL HEADER -->
+        <header>
+          <a href="index.html">
+          <img src="../img/logo1.png" alt="logo" id="logoheader">
+          </a>
+
+          <!-- NOTE: TOGGLE PARA RDW TLF MOVIL -->
+          <div class="boton">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul>
+              <li> <a href="../index.html">Inicio</a> </li>
+              <li> <a href="../nosotros.html">Nosotros</a></li>
+
+              <li class="newdropdown"> <a href="#" class="dropdown">BodyKits</a>
+                <div class="dropdcont">
+                  <a href="../bodykits/lbworks.html">LB WORKS</a>
+                  <a href="../bodykits/lbperformance.html">LB PERFORMACE</a>
+                  <a href="../bodykits/lbnation.html">lb★nation</a>
+                </div>
+              </li>
+              <li> <a href="../dealers.html">Dealers</a></li>
+
+              <li class="newdropdown"> <a href="" class="dropdown">Contacto</a>
+                <div class="dropdcont">
+                  <a href="../contacto/distribucion.html">Distribución</a>
+                  <a href="../contacto/asesoria.html">Asesoría</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- NOTE: OVERLAY NEGRO PARA LA IMG DE FONGO -->
+        <div id="blackoverlay">
+          <h1>SE<b>NUESTRO DEALER</b></h1>
+        </div>
+        <!-- NOTE: CABECERA CON IMAGEN DE FONDO -->
+        <section id="contbanner"></section>
+      </div>
+
+    <section id="contenido">
+
+      <div class="columnafotos">
+        <img src="../img/distribucion/foto1.jpg" alt="" class="fotoindwide">
+      </div>
+      <h2>Se parte de nuestro equipo!</h1>
+      <p>Llena este formulario y nos pondremos en contacto contigo para hacerte elegible como dealership.</p>
+      <div class="columnafotos">
+
+
+          <div class="contacto">
+            <form class="formulario" action="../index.html" method="post" name="formsh" onSubmit="Validacion2();"><br>
+              <label class="label">Nombre</label><br>
+              <input type="text" name="Nombre1" value=""  class="TxtInput"><br>
+              <label class="label">Dirección</label><br>
+              <input type="text" name="Direccion" value="" cla ss="TxtInput"><br>
+              <label class="label">Pais</label><br>
+              <input type="text" name="Pais" value="" class="TxtInput"><br>
+              <label class="label">Ocupación</label><br>
+              <input type="text" name="Ocupacion" value="" class="TxtInput"><br>
+              <label class="label">Genero</label><br>
+              <select id="sexo" name="Genero">
+              <option value="nada">Seleccione</option>
+              <option value="M">Masculino</option>
+              <option value="F">Femenino</option>
+              </select>
+
+              <label class="label">Numero Telefonico</label><br>
+              <input type="text" name="telefono" value="" id="Mensajes"><br>
+              <input type="submit" name="submit" value="Enviar" class="TxtInput">
+
+            </form>
+          </div>
+
+
+      </div>
+
+    </section>
+
+
+<div class="stripe"></div>
+
+
+
+<!-- NOTE:FOOTER -->
+    <footer>
+
+      <div class="footercontained">
+
+        <div class="linkbar">
+
+          <div class="footrcolumna">
+
+                <h4>Mas info:</h4>
+
+            <div class="footrfila">
+                <i class="fas fa-hands"></i>
+                <a href="../agradecimientos.html">Agradecimientos</a>
+              </div>
+
+              <div class="footrfila">
+                <i class="fas fa-user-circle"></i>
+                <a href="../sautor.html">Autor</a>
+              </div>
+
+              <div class="footrfila">
+                <i class="fab fa-instagram"></i>
+                <a href="https://instagr.am/c0nvexo">Instagram</a>
+              </div>
+            </div>
+
+            <div class="footrcolumna">
+
+              <div class="footrfila">
+                <h4>Visita nuestra sucursal!</h4>
+              </div>
+
+                <div class="mapa">
+                  <img src="../img/map.jpg" alt="mapa">
+                  <p>Liberty Walk, 1 Chome-178番地 Setogawacho, Owariasahi, Aichi Prefecture 488-0023, Japón</p>
+                </div>
+
+            </div>
+            </div>
+
+<div class="stripe"></div>
+            <div class="creditbar">
+              <div class="copyright">
+                <p><b>Liberty Walk Co.</b> Todos los Derechos Reservados.</p>
+              </div>
+                <div class="frase">
+                  <p>Hecho con Amor y pila de sueño por un estudiante del ITLA.</p>
+                </div>
+            </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

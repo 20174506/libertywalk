@@ -6,7 +6,7 @@
     <title>Liberty Walk</title>
     <!-- NOTE: HOJA DE ESTILOS -->
     <link rel="stylesheet" href="../css/master.css">
-    <link rel="stylesheet" href="../css/dealers.css">
+    <link rel="stylesheet" href="../css/asesoria.css">
     <!-- NOTE: LIBRERIA DE ICONOS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <!-- NOTE: Libreria JQUERY -->
@@ -58,49 +58,46 @@
 
         <!-- NOTE: OVERLAY NEGRO PARA LA IMG DE FONGO -->
         <div id="blackoverlay">
-          <h1>DEALERS <b>INTERNACIONALES</b></h1>
+          <h1> PREGUNTAS <b>FREQUENTES</b></h1>
         </div>
         <!-- NOTE: CABECERA CON IMAGEN DE FONDO -->
         <section id="contbanner"></section>
       </div>
 
     <section id="contenido">
-      <h2>NUESTROS DEALERS</h1>
-      <p>Comercializamos bodykits y autos de manera internacional.</p>
 
       <div class="columnafotos">
-        <img src="../img/dealers/foto1.jpg" alt="" class="fotoindwide">
+        <img src="../img/asesoria/foto1.jpg" alt="" class="fotoindwide">
       </div>
-
+      <h2>ALGUNA PREGUNTA?</h1>
+      <p>Contactanos mediante este formulario!</p>
       <div class="columnafotos">
 
-        <div class="fila">
 
-        <h4>LTMOTORWERKS (USA)</h4>
-        <p class="parrafoind">
+          <div class="contacto">
+            <form class="formulario" action="../index.html" method="post" name="formsh" onSubmit="Validacion();"><br>
+              <label class="label">Nombre</label><br>
+              <input type="text" name="Nombre1" value=""  class="TxtInput"><br>
+              <label class="label">Dirección</label><br>
+              <input type="text" name="Direccion" value="" cla ss="TxtInput"><br>
+              <label class="label">Pais</label><br>
+              <input type="text" name="Pais" value="" class="TxtInput"><br>
+              <label class="label">Ocupación</label><br>
+              <input type="text" name="Ocupacion" value="" class="TxtInput"><br>
+              <label class="label">Genero</label><br>
+              <select id="sexo" name="Genero">
+              <option value="nada">Seleccione</option>
+              <option value="M">Masculino</option>
+              <option value="F">Femenino</option>
+              </select>
+              <label class="label">Mensaje</label><br>
+              <input type="text" name="Mensaje" value="" id="Mensaje"><br>
+              <input type="submit" name="submit" value="Enviar" class="TxtInput">
 
-          5442 N. Peck Road, El Monte, CA 91732 <br>
+            </form>
+          </div>
 
-          626.452.8321<br>
 
-          www.ltmotorwerks.com <br>
-
-          info@ltmotorwerks.com</p>
-      </div>
-
-          <div class="fila">
-
-          <h4>NUR PERFORMANCE (USA)</h4>
-          <p class="parrafoind">
-
-            11766 Metro Parkway STE-A, Fort Myers, FL 33966, USA <br>
-
-            239 672 8347 <br>
-
-            www.nurperformance.com <br>
-
-            sales@nurperformance.com</p>
-        </div>
       </div>
 
     </section>
@@ -144,7 +141,7 @@
               </div>
 
                 <div class="mapa">
-                  <img src="img/map.jpg" alt="mapa">
+                  <img src="../img/map.jpg" alt="mapa">
                   <p>Liberty Walk, 1 Chome-178番地 Setogawacho, Owariasahi, Aichi Prefecture 488-0023, Japón</p>
                 </div>
 

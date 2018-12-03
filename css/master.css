@@ -205,7 +205,7 @@ CONTENIDO CONTENIDO  */
   text-decoration: none;
 }
 .columnafotos {
-  max-width: 100%;
+  width: 100%;
   margin: auto;
   display:table;
   text-align: center
@@ -246,7 +246,7 @@ CONTENIDO CONTENIDO  */
 .fotoindwide {
   object-position: 50% 50%;
   object-fit: cover;
-  width: 100%;
+  width: 80%;
   height:300px;
   margin:20px;
 }
@@ -409,6 +409,44 @@ footer{
 
       .dropdcont {
         position:static;}
+}
+
+
+
+/* NOTE: FORMULARIO */
+
+.formulario {
+  color: white;
+  width: 40%;
+  margin: 20px auto;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color:#74a6f7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 4px;
 }
 
 
