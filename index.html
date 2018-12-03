@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>Liberty Walk</title>
+    <!-- NOTE: HOJA DE ESTILOS -->
     <link rel="stylesheet" href="css/master.css">
+    <!-- NOTE: LIBRERIA DE ICONOS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- NOTE: Libreria JQUERY -->
+    <script src="js/jquery.js"></script>
+    <!-- NOTE: MIS FUNCIONES JQUERY -->
+    <script src="js/funciones.js"></script>
   </head>
+
+
   <body>
 
 
 
-
+    <!-- NOTE: HEADER CON FONDO Y TITULO -->
     <div id="topart">
         <!-- NOTE: INICIO DEL HEADER -->
         <header>
+          <a href="index.html">
           <img src="img/logo1.png" alt="logo" id="logoheader">
-          <nav>
+          </a>
 
+          <!-- NOTE: TOGGLE PARA RDW TLF MOVIL -->
+          <div class="boton">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
             <ul>
               <li> <a href="index.html">Inicio</a> </li>
               <li> <a href="#">Nosotros</a></li>
-              <li> <a href="#">BodyKits</a></li>
+
+              <li class="newdropdown"> <a href="#" class="dropdown">BodyKits</a>
+                <div class="dropdcont">
+                  <a href="#">LB WORKS</a>
+                  <a href="#">LB PERFORMACE</a>
+                  <a href="#">LB NATION</a>
+                </div>
+              </li>
               <li> <a href="#">Dealers</a></li>
-              <li> <a href="#" class="dropdown">Contacto</a>
-                <div class=dropdcont>
+
+              <li class="newdropdown"> <a href="#" class="dropdown">Contacto</a>
+                <div class="dropdcont">
                   <a href="#">Distribución</a>
                   <a href="#">Asesoría</a>
                 </div>
@@ -31,8 +55,6 @@
           </nav>
         </header>
 
-
-
         <!-- NOTE: OVERLAY NEGRO PARA LA IMG DE FONGO -->
         <div id="blackoverlay">
           <h1>SOMOS <b>LIBERTY WALK</b></h1>
@@ -40,7 +62,11 @@
         <!-- NOTE: CABECERA CON IMAGEN DE FONDO -->
         <section id="contbanner"></section>
       </div>
-      <p>klk wawawa</p>
+
+    <section id="contenido">
+      <h2>Bodykits en venta</h1>
+      <p>Tenemos una gran cantidad de Body-Kits para el vehiculo que necesites.</p>
+    </section>
 
   </body>
 </html>

@@ -11,8 +11,9 @@ body {
 {
   width: 100%;
   height: 100vh;
+  margin:0;
+  padding:0;
 }
-
 
 
 #contbanner{
@@ -44,7 +45,6 @@ body {
   top:0px;
 }
 
-
 /* NOTE: PROPIEDADES DEL HEADER */
 header{
   position: relative;
@@ -54,31 +54,44 @@ header{
   max-width: 1024px;
   height: 8vh;
   margin:auto;
-  padding-top: 25px;
+  padding-top: 45px;
 }
 
 /* NOTE: LOGO HEADER */
 #logoheader{
-  margin-top: 20px;
+
   height:40px;
   float: left;
 }
 
+
+/* NOTE: BOTON RDW */
+.boton{
+  display: none;
+  width:100%;
+  padding: 4px 30px;
+  color: white;
+  font-size: 16pt;
+}
+
 /* NOTE: ESTILOS PARA LA BARRA DE NAVEGACION */
 
-
 header nav{
-position: relative;
-height:40px;
-width:100%;
+
 color:green;
+float: right;
 }
+
 header nav ul {
-  position: absolute;
+  /*position: absolute;
   top:50%;
   transform: translateY(-50%);
-  right:0;
+  right:0;*/
+
   list-style: none;
+  margin:0;
+  padding:0;
+
 }
 
 header nav ul li {
@@ -96,6 +109,9 @@ header nav ul li a {
 }
 
 /* NOTE: DROPDOWN MENU */
+.newdropdown{
+  position: relative;
+}
 
 .dropdcont {
 display:none;
@@ -105,9 +121,6 @@ padding:0;
 padding-top: 25px;
 }
 
-.dropdown{
-  /*display: inline-block;*/
-}
 .dropdcont a{
 
   color: white;
@@ -115,6 +128,8 @@ padding-top: 25px;
   text-align: left;
   margin:0;
 }
+
+
 
 /* NOTE: Titulo H1 DEL SITIO */
 h1{
@@ -128,6 +143,8 @@ h1{
 }
 
 ul li a:hover, .dropdown:hover{
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
     background-color: red;
 }
 
@@ -137,4 +154,141 @@ ul li a:hover, .dropdown:hover{
 
 .dropdcont:hover {
   display: grid;
+}
+
+
+/* NOTE: CONTENIDO CONTENIDO
+CONTENIDO CONTENIDO  */
+
+
+#contenido{
+  width: 100%;
+  margin:0;
+  padding:0;
+  background-color: black;
+}
+
+#contenido h2{
+  text-align: center;
+  font-size: 24pt;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  padding: 45px;
+}
+
+#contenido p {
+  color: white;
+  margin:auto;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+
+/*NOTE: RESPONSIVE*/
+
+@media only screen and (max-width: 640px) {
+    /* For mobile phones: */
+
+
+      header{
+        margin:auto;
+      }
+
+      header nav {
+        margin: auto;
+        float:none;
+        margin-top: 43px;
+        width: 100%;
+      }
+
+      header nav {
+        display:none;
+      }
+      #logoheader{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+      }
+
+      header nav ul {
+        position: static;
+        background: rgba(139, 0, 0, 0.6);
+        }
+
+      header nav ul li a {
+      }
+
+      .boton{
+        display: block;
+      }
+
+      header nav ul li {
+        display: block;
+        float: none;
+        padding: 15px 0;
+      }
+
+      header nav ul li a {
+        padding: 15px 80px;
+      }
+
+      ul li:hover, .dropdown:hover{
+        -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+          background-color: red;
+      }
+      ul li:hover .dropdcont  {
+        display: grid;
+      }
+
+      .dropdcont:hover {
+        display: grid;
+      }
+
+      .dropdcont {
+        position:static;}
+}
+
+
+@media only screen and (min-width: 1111px) {
+    body {
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1110px) {
+
+    header{
+      margin:auto;
+    }
+
+    header nav {
+      display: table;
+      margin: auto;
+      float:none;
+      margin-top:65px;
+    }
+
+    #logoheader{
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%);
+    }
+
+  header nav ul {
+  position: inherit;
+    }
+
+header nav ul li a {
+  padding: 15px 12px;
+  margin:  0 10px;
 }
