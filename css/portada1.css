@@ -21,7 +21,7 @@ body {
   z-index: 9;
  /*NOTE: IMAGEN DE FONDO*/
 
-  background: url("../img/Nosotros/banner.jpg");
+  background: url("../img/nosotros/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
